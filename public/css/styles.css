@@ -5,5 +5,132 @@
   box-sizing: border-box;
 }
 body { 
-  background-color: cyan;
+  background-image: url('../images/site/small_check.jpg');
+  font-size: 16px;
+  width: 100%;
 }
+#wrapper { 
+  background-color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px solid aliceblue;
+  border-radius: 2px;
+}
+
+/* Add padding to the main section elements */
+
+header, main, ul, footer { 
+  padding: 1rem;
+}
+
+
+header { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+header .siteName a { 
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+header #tools { 
+  display: flex;
+  justify-self: end;
+}
+
+header #tools a { 
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+}
+
+nav ul { 
+  display: flex;
+  list-style: none;
+}
+nav ul li { 
+  flex: 1 1 100%;
+  background-color: #000;
+}
+nav ul li a { 
+  display: block;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+}
+nav ul li a:hover { 
+  background-color: white;
+  color: black;
+  border: 3.5px solid black;
+}
+
+main { 
+  margin-top: -2rem;
+  position: relative;
+}
+
+main .hero img { 
+  width: 100%;
+  height: auto;
+}
+
+.hero { 
+  padding: 0.5rem;
+}
+
+main .hero .overlay-info { 
+  position: absolute;
+  top: 110px;
+  background-color: rgba(225,225, 225, 0.2);
+  width: 30%;
+}
+.hero .overlay-info p { 
+  line-height: 5px;
+  color: magenta;
+  font-size: 18px;
+}
+.hero .overlay-info p:nth-child(1) { 
+  font-weight: 600;
+  font-size: 20px;
+}
+.hero .overlay-info img { 
+  width: 80%;
+  height: auto;
+}
+
+.features { 
+  background-color: white;
+  /* padding: 1rem; */
+}
+.features .upgrades { 
+  background-color: white;
+  /* background-color: red; */
+  padding: 0;
+}
+.features .grade { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* background-color: red; */
+  column-gap: 0px;
+  padding: 0rem;
+}
+.features .grade img { 
+  background-color: magenta;
+  text-align: center;
+  padding: 1.5em;
+}
+.features .review { 
+  background-color: white;
+}
+.features figure { 
+  padding: 0px;
+}
+
+
+
