@@ -54,8 +54,9 @@ header #tools a {
 }
 
 #wrapper h1 { 
-  font-size: 1.75rem;
+  font-size: 1rem;
   /* color: red; */
+  width: 60vw;
 }
 
 nav ul { 
@@ -97,10 +98,10 @@ main .hero img {
 
 main .hero .overlay-info { 
   position: absolute;
-  top: 60px;
+  top: 0;
   background-color: rgba(225,225, 225, 0.2);
   width: 150px;
-  margin: 0.75vh 0;
+  margin: 4rem 0;
   padding: 0 0.25rem;
 
 }
