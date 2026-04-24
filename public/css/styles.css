@@ -4,17 +4,20 @@
 *:after {
   box-sizing: border-box;
 }
+/* General styling the body */
 body { 
   background-image: url('../images/site/small_check.jpg');
   font-size: 16px;
   width: 100%;
 }
+/*Parent DIV with ID wrapper*/
 #wrapper { 
   background-color: white;
-  max-width: 1200px;
+  min-width: 355px;
   margin: 0 auto;
   border: 2px solid aliceblue;
   border-radius: 2px;
+
 }
 
 /* Add padding to the main section elements */
@@ -23,12 +26,13 @@ header, main, ul, footer {
   padding: 1rem;
 }
 
-
+/* Using Grid to layout the header */
 header { 
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+/* Styling the site name CSE Motors */
 header .siteName a { 
   font-size: 1.5rem;
   font-weight: 600;
@@ -46,6 +50,12 @@ header #tools a {
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
+  font-size: 1rem;
+}
+
+#wrapper h1 { 
+  font-size: 1.75rem;
+  /* color: red; */
 }
 
 nav ul { 
@@ -81,55 +91,66 @@ main .hero img {
 }
 
 .hero { 
-  padding: 0.5rem;
+  padding: 0 0.5rem;
+  text-decoration: none;
 }
 
 main .hero .overlay-info { 
   position: absolute;
-  top: 110px;
+  top: 60px;
   background-color: rgba(225,225, 225, 0.2);
-  width: 30%;
+  width: 150px;
+  margin: 0.75vh 0;
+  padding: 0 0.25rem;
+
 }
 .hero .overlay-info p { 
   line-height: 5px;
   color: magenta;
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 .hero .overlay-info p:nth-child(1) { 
-  font-weight: 600;
-  font-size: 20px;
+ text-decoration: none;
 }
 .hero .overlay-info img { 
   width: 80%;
   height: auto;
 }
-
+/* Parent div for the next section */
 .features { 
   background-color: white;
+  display: grid;
   /* padding: 1rem; */
 }
+
 .features .upgrades { 
   background-color: white;
   /* background-color: red; */
-  padding: 0;
+  padding: 0rem;
 }
+/* Section with images */
 .features .grade { 
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* background-color: red; */
-  column-gap: 0px;
+  /* max-width: 300px; */
+  /* margin: 0 auto; */
   padding: 0rem;
 }
 .features .grade img { 
   background-color: magenta;
   text-align: center;
-  padding: 1.5em;
+  padding: .95em;
+  overflow: hidden;
+  width: 100%
 }
 .features .review { 
   background-color: white;
+  grid: 1/2;
 }
 .features figure { 
   padding: 0px;
+  text-align: center;
 }
 
 
