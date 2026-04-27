@@ -54,7 +54,7 @@ header #tools a {
 }
 
 #wrapper h1 { 
-  font-size: 1rem;
+  font-size: 1.1rem;
   /* color: red; */
   width: 60vw;
 }
@@ -107,7 +107,9 @@ main .hero .overlay-info {
 }
 .hero .overlay-info p { 
   line-height: 5px;
-  color: magenta;
+  color: #000080;
+  margin: 1rem 0;
+  /* color: red; */
   /* font-size: 18px; */
 }
 .hero .overlay-info p:nth-child(1) { 
@@ -121,6 +123,7 @@ main .hero .overlay-info {
 .features { 
   background-color: white;
   display: grid;
+  grid-template-columns: 1fr;
   /* padding: 1rem; */
 }
 
@@ -137,22 +140,111 @@ main .hero .overlay-info {
   /* max-width: 300px; */
   /* margin: 0 auto; */
   padding: 0rem;
+  gap: 10px;
+}
+.upgrades .grade figure { 
+  margin: 0px;
 }
 .features .grade img { 
   background-color: magenta;
   text-align: center;
   padding: .95em;
   overflow: hidden;
-  width: 100%
+  width: 100%;
+ height: 160px;
 }
-.features .review { 
+.features .reviews { 
   background-color: white;
-  grid: 1/2;
+  /* background-color: gray; */
+  /* grid-column: 2/2; */
+}
+.features .reviews ul { 
+  margin-top: -2rem;
+}
+.features .reviews li { 
+  margin: 1rem 0;
 }
 .features figure { 
   padding: 0px;
   text-align: center;
 }
 
+/* Styling for the large screen */
+
+@media screen and (min-width: 760px) { 
+  #wrapper { 
+  background-color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px solid aliceblue;
+  border-radius: 2px;
+
+}
+#wrapper h1 { 
+  font-size: 1.7rem;
+}
+
+main .hero .overlay-info { 
+  margin: 10rem 2rem;
+  min-height: 300px;
+  min-width: 250px;
+}
+.hero .overlay-info p:nth-child(1) { 
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.hero .overlay-info p {
+  margin: 1.5rem 0; 
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 25px;
+}
+.hero .overlay-info img { 
+  height: 7vh;
+}
 
 
+.features { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+
+}
+
+.features .upgrades { 
+  text-decoration: none;
+  grid-column: 1/2;
+}
+
+.features .upgrades h2 { 
+  text-decoration: none;
+}
+.features .grade {
+   margin: 0;
+  justify-items: start;
+  /* height: 200px; */
+}
+
+.features .grade figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+ /* height: 100px; */
+}
+
+.features .grade img { 
+  background-color: magenta;
+  width: 100%;
+  height: 160px;
+}
+.features .reviews ul { 
+  margin-top: -4rem;
+}
+
+.features .reviews li { 
+  line-height: 50px;
+  margin: 2rem 0;
+  
+}
+
+} 
